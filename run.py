@@ -5,7 +5,7 @@ import random
 def Open_file():
     i = 0
     Emp_name = ['Nobody']                                                                   #List of employee 
-    EmployeeName = open("EmployeeName.txt", "r",encoding="utf-8")                                            #Open file with name (First & Last name)
+    EmployeeName = open("EmployeeName.txt", "r",encoding="utf-8")                          #Open file with name (First & Last name)
     for Employee in EmployeeName:
         i +=1       
         print(str(i)+ ". " + str(Employee).strip('\n'))                                     #List of employee
