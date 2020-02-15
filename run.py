@@ -76,7 +76,7 @@ def Main_fun(result_nrule_schedule, Time_dist_emp, Emp_name):
     
     #Emp_name = ['Employee 1','Employee 2','Employee 3','Employee 4','Employee 5','Employee 6','Employee 7','Employee 8','Employee 9','Employee 10','Employee 11','Employee 12']
     with open('Schedule.csv', 'w', newline='', encoding="utf-8") as csvfile:
-        writer2 = csv.writer(csvfile, delimiter=";")
+        writer2 = csv.writer(csvfile)
         writer2.writerows([Week])
       
         for key, value in result_nrule_schedule.items():
